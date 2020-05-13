@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_array">
+        <item>Default for Device</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Indonesian</item>
+    </string-array>
+    <string-array name="language_values_array">
+        <item>@string/default_locale</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>in</item>
+    </string-array>
+    <string-array name="route_profile_array">
+        <item>Driving</item>
+        <item>Cycling</item>
+        <item>Walking</item>
+    </string-array>
+    <string-array name="route_profile_values_array">
+        <item>driving-traffic</item>
+        <item>cycling</item>
+        <item>walking</item>
+    </string-array>
+    <string-array name="unit_type_array">
+        <item>Default for Device</item>
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+    <string-array name="unit_type_values_array">
+        <item>@string/default_unit_type</item>
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+    <color name="colorAccent">#2D4E73</color>
+    <color name="colorPrimary">#2D4E73</color>
+    <color name="colorPrimaryDark">#2D4E73</color>
+    <color name="ic_launcher_background">#2D4E73</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="attribution_margin_start">4dp</dimen>
+    <dimen name="autocomplete_bottomsheet_elevation">8dp</dimen>
+    <dimen name="autocomplete_bottomsheet_margin">8dp</dimen>
+    <dimen name="autocomplete_bottomsheet_padding">16dp</dimen>
+    <dimen name="autocomplete_cardview_corner_radius">8dp</dimen>
+    <dimen name="autocomplete_cardview_margin">16dp</dimen>
+    <dimen name="autocomplete_padding">16dp</dimen>
+    <dimen name="bottom_sheet_peek_height">125dp</dimen>
+    <dimen name="component_navigation_bottomsheet_height">96dp</dimen>
+    <dimen name="component_navigation_route_camera_padding">56dp</dimen>
+    <dimen name="data_card_view_start_padding">16dp</dimen>
+    <dimen name="data_card_view_top_padding">16dp</dimen>
+    <dimen name="data_card_view_width">225dp</dimen>
+    <dimen name="data_margin_left">8dp</dimen>
+    <dimen name="data_margin_start">8dp</dimen>
+    <dimen name="data_text_size">18sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin_bottom">16dp</dimen>
+    <dimen name="fab_margin_default">16dp</dimen>
+    <dimen name="fab_margin_end">8dp</dimen>
+    <dimen name="maneuver_view_height">60dp</dimen>
+    <dimen name="maneuver_view_margin">8dp</dimen>
+    <dimen name="maneuver_view_width">60dp</dimen>
+    <dimen name="mph_text_size">10sp</dimen>
+    <dimen name="offline_dialog_text_size">18sp</dimen>
+    <dimen name="route_overview_padding_bottom">150dp</dimen>
+    <dimen name="route_overview_padding_left">50dp</dimen>
+    <dimen name="route_overview_padding_right">50dp</dimen>
+    <dimen name="route_overview_padding_top">100dp</dimen>
+    <dimen name="speed_text_size">50sp</dimen>
+    <dimen name="step_distance_remaining_margin_bottom">8dp</dimen>
+    <string name="app_name">Mapbox Navigation SDK for Android</string>
+    <string name="autocompleteBehavior" translatable="false">com.mapbox.services.android.navigation.testapp.example.ui.autocomplete.AutocompleteBottomSheetBehavior</string>
+    <string name="blue" translatable="false">#4264fb</string>
+    <string name="current_night_mode" translatable="false">current_night_mode</string>
+    <string name="default_locale" translatable="false">default_for_device</string>
+    <string name="default_route_profile">driving-traffic</string>
+    <string name="default_unit_type" translatable="false">default_for_device</string>
+    <string name="description_component_navigation">MapboxNavigation with UI components</string>
+    <string name="description_dual_navigation_map">Shows how to add NavigationView and MapView in the same layout</string>
+    <string name="description_embedded_navigation">Navigation in a view which contains other views</string>
+    <string name="description_end_navigation">Shows how to end navigation using NavigationView</string>
+    <string name="description_fragment_navigation">NavigationView implemented with Fragment</string>
+    <string name="description_mock_navigation">Mock a navigation session using a mock location engine.</string>
+    <string name="description_navigation_launcher">Drop-in UI experience</string>
+    <string name="description_navigation_route_ui">Shows different styles using NavigationMapRoute</string>
+    <string name="description_off_route_detection">Uses the Route Utils class to determine if a users off route.</string>
+    <string name="description_offline_region_download">Download offline routing tiles</string>
+    <string name="description_offline_reroute">Test the offline reroute function inside the navigation SDK</string>
+    <string name="description_reroute">Test the reroute function inside the navigation SDK</string>
+    <string name="description_waypoint_navigation">Navigation with waypoints between destinations</string>
+    <string name="download_complete">Download is complete!</string>
+    <string name="error_route_not_available">Current route is not available</string>
+    <string name="error_select_longer_route">Please select a longer route</string>
+    <string name="error_valid_route_not_found">Valid route not found.</string>
+    <string name="explanation_long_press_waypoint">Long press map to place waypoint</string>
+    <string name="general_category_title">General</string>
+    <string name="git_hash_key" translatable="false">git_hash</string>
+    <string name="hint_where_to">Where to?</string>
+    <string name="language">Language</string>
+    <string name="language_key" translatable="false">language</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibWlrZWNhcnAiLCJhIjoiY2pvZXF5ZnVjMDFhejNwbW1yaDRoNnpoNSJ9.l0qpJf-6yGDYmTXE0JFfVg</string>
+    <string name="offline_category_title">Offline</string>
+    <string name="offline_disabled">Offline Disabled</string>
+    <string name="offline_enabled" translatable="false">offline_region_download</string>
+    <string name="offline_enabled_title">Offline routing enabled</string>
+    <string name="offline_region_download" translatable="false">offline_region_download</string>
+    <string name="offline_region_download_title">Download offline region</string>
+    <string name="offline_routing">Offline routing</string>
+    <string name="offline_version_key" translatable="false">offline_preference_key</string>
+    <string name="offline_version_title">Choose offline version</string>
+    <string name="route_profile">Route Profile</string>
+    <string name="route_profile_key" translatable="false">route_profile</string>
+    <string name="settings">Settings</string>
+    <string name="simulate_route">Simulate Route</string>
+    <string name="simulate_route_key" translatable="false">simulate_route</string>
+    <string name="title_component_navigation">MapboxNavigation with UI components</string>
+    <string name="title_dual_navigation_map">Dual Navigation Map</string>
+    <string name="title_embedded_navigation">Embedded Navigation</string>
+    <string name="title_end_navigation">End Navigation</string>
+    <string name="title_fragment_navigation">NavigationView implemented with Fragment</string>
+    <string name="title_mock_navigation">Mock Navigation</string>
+    <string name="title_navigation_launcher">Navigation Launcher</string>
+    <string name="title_navigation_route_ui">Navigation Map Route</string>
+    <string name="title_off_route_detection">Off route detection</string>
+    <string name="title_offline_region_download">Offline region download</string>
+    <string name="title_offline_reroute">Offline Reroute</string>
+    <string name="title_reroute">Reroute</string>
+    <string name="title_waypoint_navigation">Waypoint Navigation</string>
+    <string name="unit_type">Unit Type</string>
+    <string name="unit_type_key" translatable="false">unit_type</string>
+    <string name="view_examples_key" translatable="false">view_examples</string>
+    <string name="was_in_tunnel" translatable="false">was_in_tunnel</string>
+    <string name="was_navigation_stopped" translatable="false">was_navigation_stopped</string>
+</resources>

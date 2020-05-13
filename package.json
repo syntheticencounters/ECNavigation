@@ -1,0 +1,36 @@
+{
+  "_args": [
+    [
+      "ec-navigation@1.0.0",
+      "/Users/michaelcarpenter/Documents/GitHub/React-Native"
+    ]
+  ],
+  "_from": "ec-navigation@1.0.0",
+  "_id": "ec-navigation@1.0.0",
+  "_inBundle": false,
+  "_location": "/ec-navigation",
+  "_phantomChildren": {},
+  "_requiredBy": [
+    "/"
+  ],
+  "_spec": "1.0.0",
+  "_where": "/Users/michaelcarpenter/Documents/GitHub/React-Native",
+  "author": {
+    "name": "Mike Carpenter"
+  },
+  "description": "Navigation module from eCarra that implements Mapbox and Mapbox directions",
+  "homepage": "https://ecarra.app",
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "awake",
+    "screen",
+    "lock",
+    "sleep"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ec-navigation",
+  "version": "4.0.0"
+}

@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="114ec987-1818-4b8d-8807-2b007fec1aff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Activity/Activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Activity/Activity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Activity/ActivityFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Activity/ActivityFeed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Customer/CustomerNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Customer/CustomerNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Customer/CustomerReservations.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Customer/CustomerReservations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Driver/DriverMoodSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Driver/DriverMoodSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Driver/DriverRouteManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Driver/DriverRouteManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Driver/DriverScheduleSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Driver/DriverScheduleSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Driver/LocationManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Driver/LocationManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Emissions/Emissions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Emissions/Emissions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Messaging/MessageCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Messaging/MessageCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Messaging/NewMessageCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Messaging/NewMessageCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Payments/CardsCollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Payments/CardsCollection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Payments/PaymentEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Payments/PaymentEntry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Payments/PaymentSource.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Payments/PaymentSource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Payments/Payments.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Payments/Payments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reserve/NewReservationCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reserve/NewReservationCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reserve/Reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reserve/Reservation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reserve/ReservationEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reserve/ReservationEntry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reserve/ReservationOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reserve/ReservationOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reserve/ReservationsSplashCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reserve/ReservationsSplashCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reserve/Reserve.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reserve/Reserve.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Settings/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Signup/Address.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Signup/Address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Signup/EmailAddress.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Signup/EmailAddress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Signup/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Signup/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Signup/ReferredBy.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Signup/ReferredBy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Signup/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Signup/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Signup/Verification.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Signup/Verification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/release/app-release.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/release/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/java/com/ecarra/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/java/com/ecarra/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/java/com/ecarra/android/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/java/com/ecarra/android/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/layout/launch_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/layout/launch_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-hdpi/icon_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-hdpi/icon_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-mdpi/icon_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-mdpi/icon_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xhdpi/icon_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xhdpi/icon_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxhdpi/icon_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxhdpi/icon_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxxhdpi/icon_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/mipmap-xxxhdpi/icon_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/AddCardSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/AddCardSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/AlertContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/AlertContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/AlertOverlayContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/AlertOverlayContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/AppView.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/AppView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/Appearance.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/Appearance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/BasicWebView.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/BasicWebView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/BuyCreditsSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/BuyCreditsSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/CalendarSelectionSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/CalendarSelectionSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/CustomButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/CustomButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/CustomSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/CustomSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/CustomWebView.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/CustomWebView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/DatePickerSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/DatePickerSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/DateSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/DateSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/DriverInformationAlert.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/DriverInformationAlert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/DriverTipSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/DriverTipSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/DynamicAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/DynamicAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/FlightInfoSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/FlightInfoSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/FlightNumberSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/FlightNumberSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/MoodSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/MoodSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/MusicPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/MusicPicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/OnTheWayNotification.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/OnTheWayNotification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/PermissionsSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/PermissionsSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/ProfileSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/ProfileSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/PromoCodeSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/PromoCodeSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/RedeemCreditsSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/RedeemCreditsSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/RequestsSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/RequestsSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/Screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/Screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/SearchLocationsSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/SearchLocationsSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/Service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/Sheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/Sheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/SocialShareSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/SocialShareSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/TripNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/TripNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/TweetSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/TweetSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/VehicleSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/VehicleSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/VehicleVinSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/VehicleVinSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/YelpSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/YelpSheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../files/api.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../files/api.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../images/icon-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../images/icon-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../images/ios/reservations-tab.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../images/ios/reservations-tab.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../images/ios/reservations-tab@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../images/ios/reservations-tab@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../images/ios/reservations-tab@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../images/ios/reservations-tab@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../images/logo-v3-light.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../images/logo-v3-light.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../images/reservations-tab.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../images/reservations-tab.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-darkmode/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-darkmode/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-darkmode/android/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-darkmode/android/src/main/java/com/reactlibrary/EcDarkModeModule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-darkmode/android/src/main/java/com/reactlibrary/EcDarkModePackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-darkmode/ios/EcDarkMode.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-darkmode/ios/EcDarkMode.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-darkmode/ios/EcDarkMode.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/java/com/ec/navigation/ECNavigation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/java/com/ec/navigation/ECNavigationPackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-hdpi/ic_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-hdpi/paella_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-ldpi/ic_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-mdpi/ic_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-mdpi/paella_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-xhdpi/ic_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-xhdpi/paella_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-xxhdpi/ic_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-xxhdpi/paella_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-xxxhdpi/ic_car_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-xxxhdpi/ic_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable-xxxhdpi/paella_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/autocomplete_bottomsheet_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/demo_switch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/ic_cancel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/ic_car.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/ic_directions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/ic_layers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/ic_my_location.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/ic_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/ic_new_location.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/ic_refresh.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/drawable/ic_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_component_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_dual_navigation_map.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_dual_navigation_map_expanded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_embedded_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_end_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_example.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_mock_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_navigation_fragment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_navigation_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_navigation_map_route.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_offline_region_download.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/activity_reroute.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/attribution.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/callout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/example_autocomplete_list_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/item_main_feature.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/layout_notification_custom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/navigation_view_fragment_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/offline_dialog_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/layout/placeholder_fragment_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/menu/menu_off_route_detection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/menu/navigation_view_activity_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-bg/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-bn/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-ca/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-cs/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-da/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-de/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-es/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-fr/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-he/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-hu/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-id/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-it/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-my/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-pt-rBR/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-pt-rPT/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-ru/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-sv/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-uk/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values-vi/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values/arrays.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/android/src/main/res/xml/fragment_navigation_preferences.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/ios/ECNavigation.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Custom Module Backups/ec-navigation/ios/EcNavigation.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/FBSDKAppEvents.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/FBSDKAppEvents.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKEventBindingManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKEventBindingManager.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKViewHierarchy.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKViewHierarchy.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsUtility.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsUtility.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKRestrictiveDataFilterManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKRestrictiveDataFilterManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKUserDataStore.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKUserDataStore.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKUserDataStore.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKUserDataStore.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLink.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkTarget.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkTarget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Basics/Instrument/FBSDKLibAnalyzer.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Basics/Instrument/FBSDKLibAnalyzer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Basics/Internal/FBSDKBasicUtility.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Basics/Internal/FBSDKBasicUtility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKCoreKit+Internal.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKCoreKit+Internal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKError.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKError.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKFeatureManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKFeatureManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKFeatureManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKFeatureManager.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKProfile+Internal.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKProfile+Internal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfigurationManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfigurationManager.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStore.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStore.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKCoreKit/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKLoginKit/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKLoginKit/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/FBSDKShareKit/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/FBSDKShareKit/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFAppLink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFAppLinkNavigation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFAppLinkResolving.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFAppLinkReturnToRefererController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFAppLinkReturnToRefererView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFAppLinkReturnToRefererView_Internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFAppLinkTarget.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFAppLink_Internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFCancellationToken.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFCancellationTokenRegistration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFCancellationTokenSource.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFExecutor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFGeneric.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFMeasurementEvent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFMeasurementEvent_Internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFTask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFURL.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFURL_Internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/BFWebViewAppLinkResolver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/Bolts/Bolts.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/bignum-dtoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/bignum.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/cached-powers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/diy-fp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/double-conversion.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/fast-dtoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/fixed-dtoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/ieee.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/strtod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/DoubleConversion/utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKAccessTokenCacheV3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKAccessTokenCacheV3_17.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKAccessTokenCacheV3_21.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKAccessTokenCacheV4.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKBoltsMeasurementEventListener.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKBridgeAPICrypto.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKMacros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKRestrictiveDataFilterManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKRestrictiveDataFilterManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/FBSDKCoreKit/FBSDKSystemAccountStoreAdapter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNEventEmitter/RNEventBridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNEventEmitter/RNEventCallback.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNEventEmitter/RNEventConformer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNEventEmitter/RNEventEmitter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNEventEmitter/RNModuleEvents.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNFS/Downloader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNFS/NSArray+Map.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNFS/RNFSManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNFS/Uploader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/RNSVG/RNSVGPercentageConverter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTBrush.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTCGFloatArray.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTContainer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTGroup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTGroupManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTLinearGradient.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTNode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTNodeManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTPattern.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTRadialGradient.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTRenderable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTRenderableManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTShape.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTShapeManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTSolidColor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTSurfaceView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTSurfaceViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTText.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTTextFrame.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ARTTextManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/CxxModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/CxxNativeModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/DispatchMessageQueueThread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/InspectorInterfaces.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/Instance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JSBigString.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JSBundleType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JSCExecutorFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JSCRuntime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JSDeltaBundleClient.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JSExecutor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JSIDynamic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JSIndexedRAMBundle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JSModulesUnbundle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JsArgumentHelpers-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/JsArgumentHelpers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/MessageQueueThread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/MethodCall.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ModuleRegistry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/NSDataBigString.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/NSTextStorage+FontScaling.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/NativeModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/NativeToJsBridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RAMBundleRegistry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTActionSheetManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTAssetsLibraryRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTBackedTextInputDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTBackedTextInputDelegateAdapter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTBackedTextInputViewProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTBaseTextInputShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTBaseTextInputView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTBaseTextInputViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTBaseTextShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTBaseTextViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTBlobManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTConvert+ART.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTConvert+Text.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTCxxBridgeDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTCxxMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTCxxModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTCxxUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTDataRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTDevLoadingView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTDevMenu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTFileReaderModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTFileRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTFollyConvert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTGIFImageDecoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTHTTPRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImageBlurUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImageCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImageEditingManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImageLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImagePickerManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImageShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImageStoreManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImageUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImageView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTImageViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTInputAccessoryShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTInputAccessoryView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTInputAccessoryViewContent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTInputAccessoryViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTInspector.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTInspectorDevServerHelper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTInspectorPackagerConnection.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTLinkingManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTLocalAssetImageLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTMessageThread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTMultilineTextInputView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTMultilineTextInputViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTNativeModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTNetInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTNetworkTask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTNetworking.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTObjcExecutor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTPackagerClient.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTPackagerConnection.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTPhotoLibraryImageLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTPushNotificationManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTRawTextShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTRawTextViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTReconnectingWebSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTResizeMode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTSRWebSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTSettingsManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTSinglelineTextInputView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTSinglelineTextInputViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTTextAttributes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTTextSelection.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTTextShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTTextTransform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTTextView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTTextViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTUITextField.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTUITextView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTVibration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTVirtualTextShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTVirtualTextViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTWebSocketExecutor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RCTWebSocketModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/ReactMarker.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/RecoverableError.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/SharedProxyCxxModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/SystraceSection.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/instrumentation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/jsi-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/React/jsi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/RCCDrawerController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/RCCDrawerHelper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/RCCDrawerProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/RCCTheSideBarManagerViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/SidebarAirbnbAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/SidebarAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/SidebarFacebookAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/SidebarFeedlyAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/SidebarFlipboardAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/SidebarLuvocracyAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/SidebarWunderlistAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/ReactNativeNavigation/TheSidebarController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/react-native-calendar-events/RNCalendarEvents.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/react-native-fbsdk/RCTFBSDKAppInviteDialog.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/react-native-fbsdk/RCTFBSDKLikeControlManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/react-native-pdf/PdfManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/react-native-pdf/RCTPdfPageView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/react-native-pdf/RCTPdfPageViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/react-native-pdf/RCTPdfView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/react-native-pdf/RCTPdfViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/rn-fetch-blob/IOS7Polyfill.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/rn-fetch-blob/RNFetchBlob.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/rn-fetch-blob/RNFetchBlobConst.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/rn-fetch-blob/RNFetchBlobFS.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/rn-fetch-blob/RNFetchBlobNetwork.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/rn-fetch-blob/RNFetchBlobProgress.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/rn-fetch-blob/RNFetchBlobReqBuilder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Private/rn-fetch-blob/RNFetchBlobRequest.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFAppLink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFAppLinkNavigation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFAppLinkResolving.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFAppLinkReturnToRefererController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFAppLinkReturnToRefererView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFAppLinkTarget.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFCancellationToken.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFCancellationTokenRegistration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFCancellationTokenSource.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFExecutor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFGeneric.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFMeasurementEvent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFTask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFTaskCompletionSource.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFURL.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/BFWebViewAppLinkResolver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/Bolts/Bolts.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/DoubleConversion/bignum-dtoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/DoubleConversion/cached-powers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/DoubleConversion/diy-fp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/DoubleConversion/double-conversion.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/DoubleConversion/fast-dtoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/DoubleConversion/fixed-dtoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/DoubleConversion/ieee.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/DoubleConversion/strtod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/DoubleConversion/utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/FBSDKCoreKit/FBSDKMacros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNEventEmitter/RNEventBridge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNEventEmitter/RNEventCallback.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNEventEmitter/RNEventConformer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNEventEmitter/RNEventEmitter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNEventEmitter/RNModuleEvents.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNFS/Downloader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNFS/NSArray+Map.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNFS/RNFSManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNFS/Uploader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/RNSVG/RNSVGPercentageConverter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTBrush.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTCGFloatArray.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTContainer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTGroup.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTGroupManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTLinearGradient.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTNode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTNodeManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTPattern.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTRadialGradient.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTRenderable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTRenderableManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTShape.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTShapeManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTSolidColor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTSurfaceView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTSurfaceViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTText.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTTextFrame.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/ARTTextManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/NSTextStorage+FontScaling.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTActionSheetManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTAssetsLibraryRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTBackedTextInputDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTBackedTextInputDelegateAdapter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTBackedTextInputViewProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTBaseTextInputShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTBaseTextInputView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTBaseTextInputViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTBaseTextShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTBaseTextViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTBlobManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTCameraRollManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTConvert+ART.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTConvert+Text.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTDataRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTDevLoadingView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTDevMenu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTFileReaderModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTFileRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTGIFImageDecoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTHTTPRequestHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImageBlurUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImageCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImageEditingManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImageLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImagePickerManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImageShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImageStoreManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImageUtils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImageView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTImageViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTInputAccessoryShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTInputAccessoryView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTInputAccessoryViewContent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTInputAccessoryViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTInspector.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTInspectorDevServerHelper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTInspectorPackagerConnection.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTLinkingManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTLocalAssetImageLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTMultilineTextInputView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTMultilineTextInputViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTNetInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTNetworkTask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTNetworking.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTPackagerClient.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTPackagerConnection.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTPhotoLibraryImageLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTPushNotificationManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTRawTextShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTRawTextViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTReconnectingWebSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTResizeMode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTSRWebSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTSettingsManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTSinglelineTextInputView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTSinglelineTextInputViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTTextAttributes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTTextSelection.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTTextShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTTextTransform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTTextView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTTextViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTUITextField.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTUITextView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTVibration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTVirtualTextShadowView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTVirtualTextViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTWebSocketExecutor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/React/RCTWebSocketModule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/RCCDrawerController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/RCCDrawerHelper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/RCCDrawerProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/RCCTheSideBarManagerViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/SidebarAirbnbAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/SidebarAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/SidebarFacebookAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/SidebarFeedlyAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/SidebarFlipboardAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/SidebarLuvocracyAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/SidebarWunderlistAnimation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/ReactNativeNavigation/TheSidebarController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/react-native-calendar-events/RNCalendarEvents.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/react-native-fbsdk/RCTFBSDKAppInviteDialog.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/react-native-fbsdk/RCTFBSDKLikeControlManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/react-native-pdf/PdfManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/react-native-pdf/RCTPdfPageView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/react-native-pdf/RCTPdfPageViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/react-native-pdf/RCTPdfView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/react-native-pdf/RCTPdfViewManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/rn-fetch-blob/IOS7Polyfill.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/rn-fetch-blob/RNFetchBlob.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/rn-fetch-blob/RNFetchBlobConst.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/rn-fetch-blob/RNFetchBlobFS.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/rn-fetch-blob/RNFetchBlobNetwork.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/rn-fetch-blob/RNFetchBlobProgress.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/rn-fetch-blob/RNFetchBlobReqBuilder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Headers/Public/rn-fetch-blob/RNFetchBlobRequest.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Local Podspecs/RNEventEmitter.podspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Local Podspecs/ReactNativeNavigation.podspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Local Podspecs/ReactNativeNavigation.podspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Local Podspecs/ReactNativePayments.podspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Local Podspecs/ReactNativePayments.podspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Local Podspecs/react-native-pdf.podspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra-resources.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra-resources.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/Pods-eCarra/Pods-eCarra.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/RNEventEmitter/RNEventEmitter-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/RNEventEmitter/RNEventEmitter-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/RNEventEmitter/RNEventEmitter.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/react-native-calendar-events/react-native-calendar-events-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/react-native-calendar-events/react-native-calendar-events-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/react-native-calendar-events/react-native-calendar-events.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/react-native-calendar-events/react-native-calendar-events.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/react-native-pdf/react-native-pdf-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/react-native-pdf/react-native-pdf-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/Pods/Target Support Files/react-native-pdf/react-native-pdf.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/AppDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/AppDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/AppDelegate.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Base.lproj/LaunchScreen.xib" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Base.lproj/LaunchScreen.xib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/20@2x-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/40@2x-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-1024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-20@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-20@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-29@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-29@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/AppIcon.appiconset/icon-40@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/activity.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/activity.imageset/activity-tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/activity.imageset/activity-tab@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/activity.imageset/activity-tab@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/emissions.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/emissions.imageset/emissions-tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/emissions.imageset/emissions-tab@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/emissions.imageset/emissions-tab@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/payments.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/payments.imageset/payments-tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/payments.imageset/payments-tab@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/payments.imageset/payments-tab@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/reserve.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/reserve.imageset/reservations-tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/reserve.imageset/reservations-tab@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/reserve.imageset/reservations-tab@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/settings.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/settings.imageset/settings-tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/settings.imageset/settings-tab@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Images.xcassets/settings.imageset/settings-tab@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ios/eCarra/eCarra.entitlements" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/eCarra/eCarra.entitlements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/ec/navigation/ECNavigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/ec/navigation/ECNavigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/ECNavigation.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/ECNavigation.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/ECNavigation.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/ECNavigation.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-native-circular-slider-re/src/CircularSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react-native-circular-slider-re/src/CircularSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-native-circular-slider-re/src/ClockFace.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react-native-circular-slider-re/src/ClockFace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="58" />
+    <option name="y" value="27" />
+    <option name="width" value="1565" />
+    <option name="height" value="944" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ec-navigation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ec-navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="114ec987-1818-4b8d-8807-2b007fec1aff" name="Default Changelist" comment="" />
+      <created>1573580993629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573580993629</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="959" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.2742616" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+</project>

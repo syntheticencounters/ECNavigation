@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F793F7E2357ED4900F336E4 /* MapboxNavigationNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F762357ED4900F336E4 /* MapboxNavigationNative.framework */; };
+		3F793F7F2357ED4900F336E4 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F772357ED4900F336E4 /* Polyline.framework */; };
+		3F793F802357ED4900F336E4 /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F782357ED4900F336E4 /* MapboxDirections.framework */; };
+		3F793F812357ED4900F336E4 /* MapboxNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F792357ED4900F336E4 /* MapboxNavigation.framework */; };
+		3F793F822357ED4900F336E4 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F7A2357ED4900F336E4 /* Mapbox.framework */; };
+		3F793F842357ED4900F336E4 /* MapboxSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F7C2357ED4900F336E4 /* MapboxSpeech.framework */; };
+		3F793F852357ED4900F336E4 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F7D2357ED4900F336E4 /* MapboxMobileEvents.framework */; };
+		3F793F942357EE2300F336E4 /* MapboxGeocoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F932357EE2300F336E4 /* MapboxGeocoder.framework */; };
+		3F793FA32357F30600F336E4 /* MapboxCoreNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793FA22357F30600F336E4 /* MapboxCoreNavigation.framework */; };
+		3FACF93722F6869400F21013 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FACF92F22F6856200F21013 /* Polyline.framework */; };
+		B3E7B58A1CC2AC0600A0062D /* ECNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* ECNavigation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		134814201AA4EA6300B7C361 /* libECNavigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libECNavigation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F793F762357ED4900F336E4 /* MapboxNavigationNative.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxNavigationNative.framework; path = Mapbox/MapboxNavigationNative.framework; sourceTree = "<group>"; };
+		3F793F772357ED4900F336E4 /* Polyline.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Polyline.framework; path = Mapbox/Polyline.framework; sourceTree = "<group>"; };
+		3F793F782357ED4900F336E4 /* MapboxDirections.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxDirections.framework; path = Mapbox/MapboxDirections.framework; sourceTree = "<group>"; };
+		3F793F792357ED4900F336E4 /* MapboxNavigation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxNavigation.framework; path = Mapbox/MapboxNavigation.framework; sourceTree = "<group>"; };
+		3F793F7A2357ED4900F336E4 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Mapbox/Mapbox.framework; sourceTree = "<group>"; };
+		3F793F7C2357ED4900F336E4 /* MapboxSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxSpeech.framework; path = Mapbox/MapboxSpeech.framework; sourceTree = "<group>"; };
+		3F793F7D2357ED4900F336E4 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxMobileEvents.framework; path = Mapbox/MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		3F793F932357EE2300F336E4 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxGeocoder.framework; path = Mapbox/MapboxGeocoder.framework; sourceTree = "<group>"; };
+		3F793FA22357F30600F336E4 /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxCoreNavigation.framework; path = Mapbox/MapboxCoreNavigation.framework; sourceTree = "<group>"; };
+		3FACF92F22F6856200F21013 /* Polyline.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Polyline.framework; sourceTree = "<group>"; };
+		3FBEF56D22F4AEBC006A9A4D /* ECNavigation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECNavigation-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3E7B5881CC2AC0600A0062D /* ECNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECNavigation.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* ECNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECNavigation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F793F852357ED4900F336E4 /* MapboxMobileEvents.framework in Frameworks */,
+				3F793F7F2357ED4900F336E4 /* Polyline.framework in Frameworks */,
+				3F793F842357ED4900F336E4 /* MapboxSpeech.framework in Frameworks */,
+				3F793F812357ED4900F336E4 /* MapboxNavigation.framework in Frameworks */,
+				3F793FA32357F30600F336E4 /* MapboxCoreNavigation.framework in Frameworks */,
+				3F793F802357ED4900F336E4 /* MapboxDirections.framework in Frameworks */,
+				3F793F942357EE2300F336E4 /* MapboxGeocoder.framework in Frameworks */,
+				3F793F7E2357ED4900F336E4 /* MapboxNavigationNative.framework in Frameworks */,
+				3FACF93722F6869400F21013 /* Polyline.framework in Frameworks */,
+				3F793F822357ED4900F336E4 /* Mapbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134814211AA4EA7D00B7C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134814201AA4EA6300B7C361 /* libECNavigation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F6A44F322F480EE007207FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F793F7A2357ED4900F336E4 /* Mapbox.framework */,
+				3F793FA22357F30600F336E4 /* MapboxCoreNavigation.framework */,
+				3F793F782357ED4900F336E4 /* MapboxDirections.framework */,
+				3F793F932357EE2300F336E4 /* MapboxGeocoder.framework */,
+				3F793F7D2357ED4900F336E4 /* MapboxMobileEvents.framework */,
+				3F793F792357ED4900F336E4 /* MapboxNavigation.framework */,
+				3F793F762357ED4900F336E4 /* MapboxNavigationNative.framework */,
+				3F793F7C2357ED4900F336E4 /* MapboxSpeech.framework */,
+				3F793F772357ED4900F336E4 /* Polyline.framework */,
+				3FACF92F22F6856200F21013 /* Polyline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FACF87422F632D800F21013 /* Mapbox */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapbox;
+			sourceTree = "<group>";
+		};
+		58B511D21A9E6C8500147676 = {
+			isa = PBXGroup;
+			children = (
+				B3E7B5881CC2AC0600A0062D /* ECNavigation.h */,
+				B3E7B5891CC2AC0600A0062D /* ECNavigation.m */,
+				3FACF87422F632D800F21013 /* Mapbox */,
+				134814211AA4EA7D00B7C361 /* Products */,
+				3F6A44F322F480EE007207FD /* Frameworks */,
+				3FBEF56D22F4AEBC006A9A4D /* ECNavigation-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58B511DA1A9E6C8500147676 /* ECNavigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ECNavigation" */;
+			buildPhases = (
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECNavigation;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libECNavigation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B511D31A9E6C8500147676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "ECNavigation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				de,
+				he,
+				ar,
+				"zh-Hans",
+				ja,
+				fa,
+				uk,
+				yo,
+				es,
+				sl,
+				da,
+				it,
+				bg,
+				sv,
+				ko,
+				Base,
+				"zh-Hant",
+				hu,
+				"pt-BR",
+				vi,
+				lt,
+				ru,
+				fr,
+				nl,
+				"pt-PT",
+				ca,
+			);
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B511DA1A9E6C8500147676 /* ECNavigation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B511D71A9E6C8500147676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E7B58A1CC2AC0600A0062D /* ECNavigation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58B511ED1A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58B511EE1A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58B511F01A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Mapbox/**",
+					"$(PROJECT_DIR)/**",
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/Mapbox/**",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(SRCROOT)/Frameworks/**",
+					"$(PROJECT_DIR)/Mapbox",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/React-Core/React/**",
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/React-Core/**",
+					"${PODS_ROOT}/Headers/Public/React",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ECNavigation;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ECNavigation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Mapbox/**",
+					"$(PROJECT_DIR)/**",
+					"$(SRCROOT)/**",
+					"$(SRCROOT)/Mapbox/**",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(SRCROOT)/Frameworks/**",
+					"$(PROJECT_DIR)/Mapbox",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/React-Core/React/**",
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/React-Core/**",
+					"${PODS_ROOT}/Headers/Public/React",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ECNavigation;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ECNavigation-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "ECNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ECNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+}
