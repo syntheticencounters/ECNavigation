@@ -13,7 +13,7 @@
 		3F793F812357ED4900F336E4 /* MapboxNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F792357ED4900F336E4 /* MapboxNavigation.framework */; };
 		3F793F822357ED4900F336E4 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F7A2357ED4900F336E4 /* Mapbox.framework */; };
 		3F793F842357ED4900F336E4 /* MapboxSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F7C2357ED4900F336E4 /* MapboxSpeech.framework */; };
-		3F793F852357ED4900F336E4 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F7D2357ED4900F336E4 /* MapboxMobileEvents.framework */; };
+		3F793F852357ED4900F336E4 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F7D2357ED4900F336E4 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		3F793F942357EE2300F336E4 /* MapboxGeocoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F932357EE2300F336E4 /* MapboxGeocoder.framework */; };
 		3F793FA32357F30600F336E4 /* MapboxCoreNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793FA22357F30600F336E4 /* MapboxCoreNavigation.framework */; };
 		3FACF93722F6869400F21013 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FACF92F22F6856200F21013 /* Polyline.framework */; };
