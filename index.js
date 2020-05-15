@@ -1,152 +1,122 @@
-// @flow
-
 import React, { Component } from 'react';
 import { NativeModules, NativeEventEmitter, DeviceEventEmitter, Platform } from 'react-native';
 import Polyline from '@mapbox/polyline';
 
+const emitter = new NativeEventEmitter(NativeModules.ECNavigation);
 class Navigation {
 
-    origin;
-    destination;
-    travelMode = 'driving';
-    currentLocation;
     route;
-
-    isRecalculating = false;
-    onCalculatedRoute;
-    onProgressUpdated;
-    onStoppedNavigation;
-    onRecalculated;
-    onError;
-    onCalculatedRouteError;
+    active = false;
+    subscribers = {};
+    travelMode = 'driving';
     recalculatingTolerance = -1;
 
-    init = (origin, destination) => {
-        this.origin = {
-            latitude: origin.latitude ? parseFloat(origin.latitude) : null,
-            longitude: origin.longitude ? parseFloat(origin.longitude) : null,
-        };
-        this.destination = {
-            latitude: destination.latitude ? parseFloat(destination.latitude) : null,
-            longitude: destination.longitude ? parseFloat(destination.longitude) : null,
-        };
-
-        NativeModules.Navigation.setKey('pk.eyJ1IjoibWlrZWNhcnAiLCJhIjoiY2pvZXF5ZnVjMDFhejNwbW1yaDRoNnpoNSJ9.l0qpJf-6yGDYmTXE0JFfVg');
-
-        console.log('init');
-        console.log(this.origin, this.destination);
+    constructor(key) {
+        NativeModules.ECNavigation.setKey(key || 'pk.eyJ1IjoibWlrZWNhcnAiLCJhIjoiY2pvZXF5ZnVjMDFhejNwbW1yaDRoNnpoNSJ9.l0qpJf-6yGDYmTXE0JFfVg');
     }
 
-    calculateDirections = (callback) => {
-        NativeModules.Navigation.calculateRoute(this.origin, this.destination, this.travelMode).then((route) => {
+    subscribe = (id, callbacks) => {
+        this.subscribers[id] = {
+            id: id,
+            callbacks: callbacks
+        };
+        return this;
+    }
+
+    notifySubscribers = (key, props) => {
+
+        Object.values(this.subscribers).forEach(({ id, callbacks }) => {
+            if(typeof(callbacks[key]) === 'function') {
+                callbacks[key](props);
+            }
+        })
+    }
+
+    unsubscribe = (id) => {
+        delete this.subscribers[id];
+    }
+
+    getDirections = (locations, callback) => {
+
+        NativeModules.ECNavigation.getDirections(locations.map((place, index) => {
+            return {
+                name: place.name || place.address,
+                latitude: parseFloat(place.location ? place.location.latitude : place.latitude),
+                longitude: parseFloat(place.location ? place.location.longitude : place.longitude)
+            }
+        }), this.travelMode).then((route) => {
+
+            let polyline = (Platform.OS == 'android') ? Polyline.decode(route.polyline, 6) : route.polyline;
+            route.coordinates = polyline.map(coordinate => [coordinate[0], coordinate[1]]);
+            route.encoded_polyline = Polyline.encode(polyline.map(coordinate => [coordinate[1], coordinate[0]]));
 
             this.route = route;
-            let polyline = (Platform.OS == 'android') ? Polyline.decode(route.polyline, 6) : route.polyline;
-
-            var coordinates = [];
-            var encodedCoordinates = [];
-
-            for(var i in polyline) {
-                encodedCoordinates.push([polyline[i][1], polyline[i][0]]); // Reversed for MapBox
-                coordinates.push({latitude: polyline[i][0], longitude: polyline[i][1]});
-            }
-
-            route.coordinates = coordinates;
-            route.encoded_polyline = Polyline.encode(encodedCoordinates);
-
-            this.onCalculatedRoute(route);
-            if(callback) {
-                callback();
-            }
+            this.isRecalculating = false;
+            this.notifySubscribers('onGetDirections', route);
 
         }).catch((e) => {
-            if(this.onCalculatedRouteError) {
-                var message = e;
-                if(e.toString().includes('A specified location could not be associated with a roadway or pathway')) {
-                    message = 'One of the addresses may be incomplete or invalid'
-                }
-                this.onCalculatedRouteError(message);
+
+            let message = e;
+            if(e.toString().includes('A specified location could not be associated with a roadway or pathway')) {
+                message = 'One of the addresses may be incomplete or invalid'
             }
+            this.notifySubscribers('onDirectionsError', message);
         });
     }
 
-    startNavigation = (completion) => {
+    startNavigation = () => {
 
         if(!this.route) {
-            if(this.onError) {
-                this.onError('We were unable to find an accessible route for this Reservation');
-            }
+            this.notifySubscribers('onNavigationError', 'We were unable to find an accessible route for this Reservation');
             return;
         }
 
+        this.active = true;
         this.setListeners();
-        NativeModules.Navigation.startNavigation().then((response) => {
-            completion();
-            this.isNavigating = true;
-
+        NativeModules.ECNavigation.startNavigation().then((response) => {
+            this.notifySubscribers('onStartNavigation');
         }).catch((e) => {
-            if(this.onError) {
-                this.onError(e);
-            }
+            this.notifySubscribers('onNavigationError', e);
+        });
+    }
+
+    stopNavigation = () => {
+
+        this.active = false;
+        this.removeListeners();
+        NativeModules.ECNavigation.stopNavigation().then(() => {
+            this.notifySubscribers('onStopNavigation');
+        }).catch((e) => {
             console.log(e);
         });
     }
 
-    stopNavigation = (completion) => {
+    onArriveAtWaypoint = (data) => {
+        console.log(data);
+    }
 
-        this.isNavigating = false;
-        NativeModules.Navigation.stopNavigation().then(() => {
-            if(this.onStoppedNavigation) {
-                this.onStoppedNavigation();
-            }
-            if(completion) { completion(); }
-        }).catch((e) => {
-            console.log(e);
-        });
+    onRouteProgressChange = (data) => {
+        this.notifySubscribers('onRouteProgressChange', data);
+    }
+
+    onRouteRecalculation = () => {
+        if(this.isRecalculating) {
+            return;
+        }
+        this.isRecalculating = true;
+        this.notifySubscribers('onRouteRecalculation');
     }
 
     setListeners = () => {
+        emitter.addListener('offRoute', this.onRouteRecalculation);
+        emitter.addListener('progressUpdated', this.onRouteProgressChange);
+        emitter.addListener('willArriveAtWaypoint', this.onArriveAtWaypoint);
+    }
 
-        const emitter = new NativeEventEmitter(NativeModules.Navigation);
-        emitter.addListener('progressUpdated', (data) => {
-            if(this.onProgressUpdated) {
-                this.onProgressUpdated(data);
-            }
-        });
-
-        emitter.addListener('offRoute', (data) => {
-
-            if(!this.currentLocation || this.isRecalculating) { return; }
-
-            this.isRecalculating = true;
-            NativeModules.Navigation.calculateRoute(this.currentLocation, this.destination, this.travelMode).then((route) => {
-
-                this.route = route;
-                let polyline = (Platform.OS == 'android') ? Polyline.decode(route.polyline, 6) : route.polyline;
-
-                var coordinates = [];
-                var encodedCoordinates = [];
-
-                for(var i in polyline) {
-                    encodedCoordinates.push([polyline[i][1], polyline[i][0]]); // Reversed for MapBox
-                    coordinates.push({latitude: polyline[i][0], longitude: polyline[i][1]});
-                }
-
-                route.coordinates = coordinates;
-                route.encoded_polyline = Polyline.encode(encodedCoordinates);
-
-                NativeModules.Navigation.startNavigation().then((response) => {
-
-                    this.isRecalculating = false;
-                    if(this.onRecalculated) {
-                        this.onRecalculated(route);
-                    }
-                })
-
-            }).catch((e) => {
-                console.log(e);
-            });
-        });
+    removeListeners = () => {
+        emitter.removeListener('offRoute', this.onRouteRecalculation);
+        emitter.removeListener('progressUpdated', this.onRouteProgressChange);
+        emitter.removeListener('willArriveAtWaypoint', this.onArriveAtWaypoint);
     }
 }
 

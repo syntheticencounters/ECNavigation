@@ -22,9 +22,8 @@ RCT_EXPORT_METHOD(setKey:(NSString *)key)
     MapboxAccessToken = key;
 }
 
-RCT_REMAP_METHOD(calculateRoute,
-                 originMap:(NSDictionary *)originMap
-                 destinationMap:(NSDictionary *)destinationMap
+RCT_REMAP_METHOD(getDirections,
+                 locations:(NSArray *)locations
                  travelMode:(NSString *)travelMode
                  calculateRouteWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
@@ -36,35 +35,24 @@ RCT_REMAP_METHOD(calculateRoute,
         return;
     }
     
-    // Dictionary
-    NSNumber *originLat = originMap[@"latitude"];
-    NSNumber *originLong = originMap[@"longitude"];
-    if(!originLat || !originLong) {
-        NSError *error = [NSError errorWithDomain:@"ec-navigation" code:(404) userInfo:nil];
-        reject(@"error", @"Invalid origin coordinate", error);
-        return;
-    }
-    
-    NSNumber *destinationLat = destinationMap[@"latitude"];
-    NSNumber *destinationLong = destinationMap[@"longitude"];
-    if(!destinationLat || !destinationLong) {
-        NSError *error = [NSError errorWithDomain:@"ec-navigation" code:(404) userInfo:nil];
-        reject(@"error", @"Invalid destination coordinate", error);
-        return;
-    }
-    
     // Coordinates
-    CLLocation *origin = [[CLLocation alloc] initWithLatitude:(CLLocationDegrees)[originLat doubleValue] longitude:(CLLocationDegrees)[originLong doubleValue]];
+    NSMutableArray<MBWaypoint *> *waypoints = [NSMutableArray new];
+    for(NSDictionary* location in locations) {
+        
+        NSString *name = location[@"name"];
+        NSNumber *latitude = location[@"latitude"];
+        NSNumber *longitude = location[@"longitude"];
+        if(!latitude || !longitude) {
+            NSError *error = [NSError errorWithDomain:@"ec-navigation" code:(404) userInfo:nil];
+            reject(@"error", @"Unsupported coordinate found for route request", error);
+            return;
+        }
+        
+        CLLocation *place = [[CLLocation alloc] initWithLatitude:(CLLocationDegrees)[latitude doubleValue] longitude:(CLLocationDegrees)[longitude doubleValue]];
+        [waypoints addObject: [[MBWaypoint alloc] initWithCoordinate:place.coordinate coordinateAccuracy:-1 name:name]];
+    }
     
-    CLLocation *destination = [[CLLocation alloc] initWithLatitude:(CLLocationDegrees)[destinationLat doubleValue] longitude:(CLLocationDegrees)[destinationLong doubleValue]];
-    
-    // Route
-    NSArray<MBWaypoint *> *waypoints = @[
-        [[MBWaypoint alloc] initWithCoordinate:origin.coordinate coordinateAccuracy:-1 name:@"origin"],
-        [[MBWaypoint alloc] initWithCoordinate:destination.coordinate coordinateAccuracy:-1 name:@"destination"]
-    ];
-    
-    MBDirectionsProfileIdentifier identifier = MBDirectionsProfileIdentifierAutomobileAvoidingTraffic;
+    MBDirectionsProfileIdentifier identifier = MBDirectionsProfileIdentifierAutomobile;
     if([travelMode isEqual: @"walking"]) {
         identifier = MBDirectionsProfileIdentifierWalking;
     }
@@ -88,45 +76,44 @@ RCT_REMAP_METHOD(calculateRoute,
             return;
         }
         
-        MBRouteLeg *leg = route.legs.firstObject;
-        if(!leg) {
-            NSError *error = [NSError errorWithDomain:@"ec-navigation" code:(404) userInfo:nil];
-            reject(@"error", @"No steps found within the route", error);
-            return;
-        }
-        
-        NSMutableArray *routeSteps = [NSMutableArray new];
-        for (MBRouteStep *step in leg.steps) {
+        NSMutableArray *routeLegs = [NSMutableArray new];
+        for (MBRouteLeg *leg in route.legs) {
             
-            // Coordinates
-            NSMutableArray *coordinates = [NSMutableArray new];
-            for (NSValue *coordinate in step.coordinates) {
-                [coordinates addObject:@[
-                    [NSNumber numberWithDouble:coordinate.MGLCoordinateValue.latitude],
-                    [NSNumber numberWithDouble:coordinate.MGLCoordinateValue.longitude]
-                    
-                ]];
+            NSMutableArray *routeSteps = [NSMutableArray new];
+            for (MBRouteStep *step in leg.steps) {
+                
+                // Coordinates
+                NSMutableArray *coordinates = [NSMutableArray new];
+                for (NSValue *coordinate in step.coordinates) {
+                    [coordinates addObject:@[
+                        [NSNumber numberWithDouble:coordinate.MGLCoordinateValue.latitude],
+                        [NSNumber numberWithDouble:coordinate.MGLCoordinateValue.longitude]
+                        
+                    ]];
+                }
+                // Step Data
+                NSDictionary<NSString *, id> *stepData = @{
+                    @"name": step.instructions,
+                    @"direction": [self directionToString:step.maneuverDirection],
+                    @"polyline": coordinates
+                };
+                [ routeSteps addObject:stepData];
             }
-            // Step Data
-            NSDictionary<NSString *, id> *stepData = @{
-                @"name": step.instructions,
-                @"direction": [self directionToString:step.maneuverDirection],
-                @"polyline": coordinates
+            
+            // Leg Data
+            NSDictionary<NSString *, id> *legData = @{
+                @"summary": leg.name,
+                @"distance": [NSNumber numberWithDouble:leg.distance],
+                @"duration": [NSNumber numberWithDouble:leg.expectedTravelTime],
+                @"steps": routeSteps
             };
-            [ routeSteps addObject:stepData];
+            
+            [routeLegs addObject:legData];
         }
-        
-        // Leg Data
-        NSDictionary<NSString *, id> *legData = @{
-            @"summary": leg.name,
-            @"distance": [NSNumber numberWithDouble:leg.distance],
-            @"duration": [NSNumber numberWithDouble:leg.expectedTravelTime],
-            @"steps": routeSteps
-        };
         
         NSMutableArray *coordinates = [NSMutableArray new];
         for (NSValue *coordinate in route.coordinates) {
-            
+           
             [coordinates addObject:@[
                 [NSNumber numberWithDouble:coordinate.MGLCoordinateValue.latitude],
                 [NSNumber numberWithDouble:coordinate.MGLCoordinateValue.longitude]
@@ -134,12 +121,12 @@ RCT_REMAP_METHOD(calculateRoute,
         }
         
         NSDictionary<NSString *, id> *routeData = @{
+            @"legs": routeLegs,
+            @"polyline": coordinates,
             @"distance": [NSNumber numberWithDouble:route.distance],
             @"duration": [NSNumber numberWithDouble:route.expectedTravelTime],
-            @"polyline": coordinates,
-            @"steps": legData
+           
         };
-        
         resolve(routeData);
     }];
 }
@@ -147,12 +134,10 @@ RCT_REMAP_METHOD(calculateRoute,
 RCT_REMAP_METHOD(startNavigation,
                  startNavigationWithResolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
-
 {
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        manager = [[MBNavigationLocationManager alloc] init];
         
         if(navigation) {
             [navigation stop];
@@ -171,10 +156,21 @@ RCT_REMAP_METHOD(startNavigation,
             return;
         }
         
-        navigation = [[MBNavigationService alloc] initWithRoute:route directions:directions locationSource:manager eventsManagerType:nil simulating:MBNavigationSimulationOptionsNever routerType:nil];
-            navigation.delegate = self;
+        // fix this => route simulation
+        manager = [[MBNavigationLocationManager alloc] init];
+        //manager = [[MBSimulatedLocationManager alloc] initWithRoute:route];
+        
+        // fix this => route simulation
+        MBNavigationSimulationOptions simulate = MBNavigationSimulationOptionsNever;
+        //MBNavigationSimulationOptions simulate = MBNavigationSimulationOptionsAlways;
+        
+        navigation = [[MBNavigationService alloc] initWithRoute:route directions:directions locationSource:manager eventsManagerType:nil simulating:simulate routerType:nil];
+        navigation.delegate = self;
+        //navigation.simulationSpeedMultiplier = 25;
+        
         [navigation start];
     });
+    
     resolve(@"Navigation started");
 }
 
@@ -205,22 +201,22 @@ RCT_REMAP_METHOD(stopNavigation,
         string = @"none";
         break;
     case MBManeuverDirectionUTurn:
-        string = @"u turn";
+        string = @"u-turn";
         break;
     case MBManeuverDirectionSharpLeft:
-        string = @"sharp left";
+        string = @"sharp-left";
         break;
     case MBManeuverDirectionSharpRight:
-        string = @"sharp right";
+        string = @"sharp-right";
         break;
     case MBManeuverDirectionSlightLeft:
-        string = @"slight left";
+        string = @"slight-left";
         break;
     case MBManeuverDirectionSlightRight:
-        string = @"slight right";
+        string = @"slight-right";
         break;
     case MBManeuverDirectionStraightAhead:
-        string = @"strait ahead";
+        string = @"strait-ahead";
         break;
                         
     default:
@@ -245,9 +241,18 @@ RCT_REMAP_METHOD(stopNavigation,
     [self sendEventWithName:(@"offRoute") body:(offRoute)];
 }
 
+- (void)navigationService:(id<MBNavigationService>)service willArriveAtWaypoint:(MBWaypoint *)waypoint after:(NSTimeInterval)remainingTimeInterval distance:(CLLocationDistance)distance {
+    
+    NSLog(@"will arrive at waypoint");
+    NSDictionary<NSString *, id> *progressData = @{
+        @"name": waypoint.name
+    };
+    [self sendEventWithName:(@"willArriveAtWaypoint") body:(progressData)];
+}
+
+
 - (void)navigationService:(id<MBNavigationService>)service didUpdateProgress:(MBRouteProgress *)progress withLocation:(CLLocation *)location rawLocation:(CLLocation *)rawLocation
 {
-    
     MBRouteStep *step = progress.currentLegProgress.currentStep;
     currentStep = step;
     
@@ -257,46 +262,28 @@ RCT_REMAP_METHOD(stopNavigation,
     [stepData setObject: [NSNumber numberWithDouble:progress.currentLegProgress.currentStepProgress.distanceRemaining] forKey:@"distanceToEnd"];
     
     // Show next step if available
+    NSMutableDictionary *nextStepData = [NSMutableDictionary dictionary];
     if(progress.currentLegProgress.upcomingStep) {
         
         MBRouteStep *nextStep = progress.currentLegProgress.upcomingStep;
-        
-        [stepData setObject: nextStep.instructions forKey:@"text"];
-        [stepData setObject: [self directionToString:nextStep.maneuverDirection] forKey:@"direction"];
-        [stepData setObject: [NSNumber numberWithDouble:progress.currentLegProgress.currentStepProgress.distanceRemaining] forKey:@"distanceToEnd"];
+        [nextStepData setObject: nextStep.instructions forKey:@"text"];
+        [nextStepData setObject: [self directionToString:nextStep.maneuverDirection] forKey:@"direction"];
+        [nextStepData setObject: [NSNumber numberWithDouble:progress.currentLegProgress.currentStepProgress.distanceRemaining] forKey:@"distanceToEnd"];
     }
-    /*
-    if(step.instructions) {
-        
-        currentStep = step;
-        [stepData setObject:step.instructions forKey:@"text"];
-        [stepData setObject: [self directionToString:step.maneuverDirection] forKey:@"direction"];
-        [stepData setObject: [NSNumber numberWithDouble:progress.currentLegProgress.currentStepProgress.distanceRemaining] forKey:@"distanceToEnd"];
-        
-        
-    } else if(currentStep) {
-        
-        NSValue *lastStepPoint = step.coordinates[step.coordinates.count - 1];
-        if(lastStepPoint) {
-            CLLocation *coordinate = [[CLLocation alloc] initWithLatitude:lastStepPoint.MGLCoordinateValue.latitude longitude:lastStepPoint.MGLCoordinateValue.longitude];
-            
-            CLLocationDistance distance = [coordinate distanceFromLocation:location];
-            
-            [stepData setObject:currentStep.instructions forKey:@"text"];
-            [stepData setObject:[self directionToString:currentStep.maneuverDirection] forKey:@"directions"];
-            [stepData setObject:[NSNumber numberWithDouble: distance] forKey:@"distanceToEnd"];
-        }
-    }
-     */
     
     NSDictionary<NSString *, id> *progressData = @{
         @"location": @{
+            @"heading": [NSNumber numberWithDouble:location.course],
             @"latitude": [NSNumber numberWithDouble:location.coordinate.latitude],
-            @"longitude": [NSNumber numberWithDouble:location.coordinate.longitude]
+            @"longitude": [NSNumber numberWithDouble:location.coordinate.longitude],
+            @"speed": [NSNumber numberWithDouble:location.speed], // meters per second to miles per hour
         },
-        @"currentStep": stepData,
         @"remainingDistance": [NSNumber numberWithDouble:progress.distanceRemaining],
-        @"remainingDuration": [NSNumber numberWithDouble:progress.durationRemaining]
+        @"remainingDuration": [NSNumber numberWithDouble:progress.durationRemaining],
+        @"remainingLegs": [NSNumber numberWithLong:progress.remainingLegs.count],
+        @"remainingSteps":[NSNumber numberWithLong:progress.remainingSteps.count],
+        @"currentStep": stepData,
+        @"nextStep": nextStepData
     };
     
     [self sendEventWithName:(@"progressUpdated") body:(progressData)];
@@ -304,7 +291,7 @@ RCT_REMAP_METHOD(stopNavigation,
 
 - (NSArray<NSString *> *)supportedEvents
 {
-    return @[@"progressUpdated", @"offRoute"];
+    return @[@"progressUpdated", @"offRoute", @"willArriveAtWaypoint"];
 }
 
 @end

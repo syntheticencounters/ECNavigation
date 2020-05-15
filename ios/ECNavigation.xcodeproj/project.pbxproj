@@ -16,8 +16,8 @@
 		3F793F852357ED4900F336E4 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F7D2357ED4900F336E4 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		3F793F942357EE2300F336E4 /* MapboxGeocoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793F932357EE2300F336E4 /* MapboxGeocoder.framework */; };
 		3F793FA32357F30600F336E4 /* MapboxCoreNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F793FA22357F30600F336E4 /* MapboxCoreNavigation.framework */; };
-		3FACF93722F6869400F21013 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FACF92F22F6856200F21013 /* Polyline.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* ECNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* ECNavigation.m */; };
+		C13D77EF246E2315004BA222 /* ECNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E7B5881CC2AC0600A0062D /* ECNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,6 @@
 		3F793F7D2357ED4900F336E4 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxMobileEvents.framework; path = Mapbox/MapboxMobileEvents.framework; sourceTree = "<group>"; };
 		3F793F932357EE2300F336E4 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxGeocoder.framework; path = Mapbox/MapboxGeocoder.framework; sourceTree = "<group>"; };
 		3F793FA22357F30600F336E4 /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxCoreNavigation.framework; path = Mapbox/MapboxCoreNavigation.framework; sourceTree = "<group>"; };
-		3FACF92F22F6856200F21013 /* Polyline.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Polyline.framework; sourceTree = "<group>"; };
 		3FBEF56D22F4AEBC006A9A4D /* ECNavigation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECNavigation-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* ECNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECNavigation.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* ECNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECNavigation.m; sourceTree = "<group>"; };
@@ -50,7 +49,6 @@
 				3F793F802357ED4900F336E4 /* MapboxDirections.framework in Frameworks */,
 				3F793F942357EE2300F336E4 /* MapboxGeocoder.framework in Frameworks */,
 				3F793F7E2357ED4900F336E4 /* MapboxNavigationNative.framework in Frameworks */,
-				3FACF93722F6869400F21013 /* Polyline.framework in Frameworks */,
 				3F793F822357ED4900F336E4 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +76,6 @@
 				3F793F762357ED4900F336E4 /* MapboxNavigationNative.framework */,
 				3F793F7C2357ED4900F336E4 /* MapboxSpeech.framework */,
 				3F793F772357ED4900F336E4 /* Polyline.framework */,
-				3FACF92F22F6856200F21013 /* Polyline.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,11 +93,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C15E8C1F246E131D00D5CD2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C13D77EF246E2315004BA222 /* ECNavigation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		58B511DA1A9E6C8500147676 /* ECNavigation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ECNavigation" */;
 			buildPhases = (
+				C15E8C1F246E131D00D5CD2C /* Headers */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 			);
@@ -283,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -297,9 +307,12 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/Frameworks/**",
 					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/React-Core\n$(SRCROOT)/../../../ios/Pods/Headers/Public",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -318,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -332,9 +346,12 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/Frameworks/**",
 					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/React-Core\n$(SRCROOT)/../../../ios/Pods/Headers/Public",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";

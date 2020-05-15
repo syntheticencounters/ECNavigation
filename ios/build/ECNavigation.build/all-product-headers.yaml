@@ -1,0 +1,17 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Volumes/Samsung 500GB/eCarra/React-Native/local_modules/ec-navigation/ios/build/Debug-iphonesimulator/include",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ECNavigation.h",
+          'external-contents': "/Volumes/Samsung 500GB/eCarra/React-Native/local_modules/ec-navigation/ios/ECNavigation.h"
+        }
+      ]
+    }
+  ]
+}
